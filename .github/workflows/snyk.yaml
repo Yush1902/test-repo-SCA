@@ -3,7 +3,7 @@ name: Snyk security scan
 on:
   push:
     branches:
-      - main  # Or your default branch
+      - main  
 
 jobs:
   security:
