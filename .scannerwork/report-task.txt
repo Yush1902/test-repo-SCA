@@ -1,6 +1,0 @@
-projectKey=test-repo-SCA
-serverUrl=http://127.0.0.1:9000
-serverVersion=25.4.0.105899
-dashboardUrl=http://127.0.0.1:9000/dashboard?id=test-repo-SCA
-ceTaskId=0bb5509a-d6fb-40a0-a517-8713046b6362
-ceTaskUrl=http://127.0.0.1:9000/api/ce/task?id=0bb5509a-d6fb-40a0-a517-8713046b6362
