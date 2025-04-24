@@ -71,16 +71,13 @@ while ($row = $result->fetch_assoc()) {
     echo "</div>";
 }
 
-// Simple search with command injection vulnerability (Vulnerability #5)
 if (isset($_GET['search'])) {
     $term = $_GET['search'];
     echo "<p>Searching for '$term'</p>";
-    // Dangerous: Using shell_exec with user input
     $output = shell_exec("grep -i '$term' blog.php");
     echo "<pre>$output</pre>";
 }
 
-// Search form
 echo <<<EOD
     <form method="GET">
         <input type="text" name="search" placeholder="Search code...">
