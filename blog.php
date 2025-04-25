@@ -57,10 +57,9 @@ if (isset($_POST['submit'])) {
     }
 }
 
-// Display posts
 $result = $conn->query("SELECT * FROM posts ORDER BY id DESC");
 while ($row = $result->fetch_assoc()) {
-    $title = $row['title'];     // XSS Vulnerability #4
+    $title = $row['title'];
     $content = $row['content'];
     $author = $row['author'];
 
